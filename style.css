@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #170233;
+  position: relative;
+}
+
+fieldset {
+  width: 100%;
+  padding: 20px 40px;
+  border: none;
+}
+fieldset label {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+fieldset input {
+  padding: 8px 15px;
+  width: 80%;
+  max-width: 400px;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 2px solid grey;
+  color: grey;
+  background-color: transparent;
+  caret-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+fieldset input:hover {
+  border-bottom: 2px solid #af1905;
+}
+fieldset input:focus {
+  border-bottom: 2px solid #9b1c05;
+}
+fieldset button {
+  padding: 10px 15px;
+  border: 1px solid rgba(201, 52, 47, 0.7);
+  background-color: rgba(82, 1, 1, 0.8);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+fieldset button:hover {
+  background-color: rgba(107, 8, 8, 0.8);
+}
+
+.container {
+  width: calc(100% - 50px);
+  height: auto;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+.container .card {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+.container .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+}
+.container .card:hover img {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */
